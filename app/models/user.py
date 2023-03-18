@@ -3,15 +3,15 @@ from werkzeug.security import generate_password_hash, check_password_hash
 from flask_login import UserMixin
 
 
-
 followers = db.Table(
     'followers',
     db.Model.metadata,
-    db.Column('follower_id', db.Integer, db.ForeignKey(add_prefix_for_prod('users.id')),primary_key=True),
-    db.Column('followed_id', db.Integer, db.ForeignKey(add_prefix_for_prod('users.id')),primary_key=True),
+    db.Column('follower_id', db.Integer, db.ForeignKey(
+        add_prefix_for_prod('users.id')), primary_key=True),
+    db.Column('followed_id', db.Integer, db.ForeignKey(
+        add_prefix_for_prod('users.id')), primary_key=True),
     schema=SCHEMA
 )
-
 
 
 class User(db.Model, UserMixin):
@@ -24,8 +24,8 @@ class User(db.Model, UserMixin):
     firstName = db.Column(db.String(20), nullable=False)
     lastName = db.Column(db.String(20), nullable=False)
     username = db.Column(db.String(40), nullable=False, unique=True)
-    about= db.Column(db.String(500),nullable = True, default='')
-    image = db.Column(db.String(1500), nullable = True)
+    about = db.Column(db.String(500), nullable=True, default='')
+    image = db.Column(db.String(1500), nullable=True)
     email = db.Column(db.String(255), nullable=False, unique=True)
     hashed_password = db.Column(db.String(255), nullable=False)
 
@@ -50,7 +50,6 @@ class User(db.Model, UserMixin):
     def check_password(self, password):
         return check_password_hash(self.password, password)
 
-
     def follow(self, user):
         self.following.append(user)
 
@@ -68,7 +67,7 @@ class User(db.Model, UserMixin):
             'firstName': self.firstName,
             'lastName': self.lastName,
             'about': self.about,
-            'image':self.image,
+            'image': self.image,
             'username': self.username,
             'email': self.email,
         }
