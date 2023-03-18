@@ -26,7 +26,7 @@ function HomePage() {
     <div className="Splash">
       <div className="nav_bar">
         <div className="icon">
-          <img src="/favicon.svg" />
+          <img src="/pin.png" />
           Pinspired
         </div>
 

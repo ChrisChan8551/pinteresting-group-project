@@ -45,7 +45,7 @@ const Navigation = () => {
         <nav id="navigation-bar">
           <div className="left_side">
             <div className="icon">
-              <img src="/favicon.svg" />
+              <img src="/pin.png" />
               Pinspired
             </div>
 
