@@ -1,14 +1,14 @@
 import React, { useState } from "react";
 import "./HomePage.css";
-import { useHistory } from "react-router-dom";
-import { useDispatch, useSelector } from "react-redux";
+// import { useHistory } from "react-router-dom";
+import { useDispatch } from "react-redux";
 import Modal from "../../Modal/Modal";
 import LoginModal from "../../Modal/LoginModal";
 import { login } from "../../../store/session";
 import PinterestLayout from "../../PinterestLayout";
 function HomePage() {
   const dispatch = useDispatch();
-  const history = useHistory();
+  // const history = useHistory();
   const [modalOpen, setModalOpen] = useState(false);
   const [loginModalOpen, setLoginModalOpen] = useState(false);
 
@@ -26,7 +26,7 @@ function HomePage() {
     <div className="Splash">
       <div className="nav_bar">
         <div className="icon">
-          <img src="/pin.png" />
+          <img src="/pin.png" alt='' />
           Pinspired
         </div>
 

@@ -8,18 +8,15 @@ import configureStore from './store';
 
 import './index.css';
 
-
 const store = configureStore();
 
 function Root() {
 	return (
 		<Provider store={store}>
-
-				<BrowserRouter>
-					<App />
-				</BrowserRouter>
+			<BrowserRouter>
+				<App />
+			</BrowserRouter>
 		</Provider>
-
 	);
 }
 
