@@ -27,7 +27,7 @@ function HomePage() {
       <div className="nav_bar">
         <div className="icon">
           <img src="/pin.png" alt='' />
-          Pinteresting
+          Pinspired
         </div>
 
         <div className="right_menu">

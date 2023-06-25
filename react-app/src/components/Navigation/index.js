@@ -46,7 +46,7 @@ const Navigation = () => {
           <div className="left_side">
             <div className="icon">
               <img src="/pin.png" />
-              Pinteresting
+              Pinspired
             </div>
 
             <button className="regular-button" onClick={navigateToHomePage}>
