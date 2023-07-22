@@ -3,7 +3,7 @@
 Check out a live version of Pinterest here:
 [Pinterest Clone Live][Render]
 
-[Render]: https://Pinspired-project.onrender.com/
+[Render]: https://Pinteresting-project.onrender.com/
 
 Pinterest is a clone of the website PinterestApp, application where uis a visual discovery engine for finding ideas like recipes, home and style inspiration,
  and more.
@@ -32,7 +32,7 @@ and backend and allows for speedy re-rendering handled by React.
 
 *Auth Page*
 
-![Auth Preview](https://github.com/Derek-Emsbach/Pinspired-group-project/blob/main/z.Documentation/homepage%20sample.JPG)
+![Auth Preview](https://github.com/Derek-Emsbach/Pinteresting-group-project/blob/main/z.Documentation/homepage%20sample.JPG)
 
 *Normal Authentication*
 
@@ -61,7 +61,7 @@ React components exist for each corresponding action in the app. Information
 needed for all components or user actions performed.
 
 [Backend Routes]
-[Backend Routes]: https://github.com/Derek-Emsbach/Pinspired-group-project/blob/main/z.Documentation/backend_routes.md
+[Backend Routes]: https://github.com/Derek-Emsbach/Pinteresting-group-project/blob/main/z.Documentation/backend_routes.md
 
 **Discover Page: Shows recent pins from users**
 
@@ -69,7 +69,7 @@ Pictures of recent pins are displayed once logged in. User can select pins that 
 user can click url link which directs user to the source of the pin.
 
 *Example Discover Page*
-![Discover Page Preview](https://github.com/Derek-Emsbach/Pinspired-group-project/blob/main/z.Documentation/DiscoverPage%20Sample.JPG)
+![Discover Page Preview](https://github.com/Derek-Emsbach/Pinteresting-group-project/blob/main/z.Documentation/DiscoverPage%20Sample.JPG)
 
 The user can...
 1. Select and view pins that they are interested in.

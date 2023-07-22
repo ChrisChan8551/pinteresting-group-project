@@ -60,7 +60,7 @@ const SignUpForm = ({ onSuccess }) => {
   return (
     <div className="signup_container">
       <div className="signup_header">
-        <h1>Welcome to Pinspired</h1>
+        <h1>Welcome to Pinteresting</h1>
         <h4>Find new ideas to try</h4>
       </div>
 
