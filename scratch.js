@@ -1,3 +1,9 @@
+//pip install -r requirements.txt
+// flask db migrate
+// flask db upgrade
+// flask seed all
+
+
 // - [x] deploy render
 // - [x] add white space to Aman's grid
 // - [x] boards add real pins cards instead of fake grid

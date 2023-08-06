@@ -82,7 +82,6 @@ def upgrade():
                     sa.ForeignKeyConstraint(['boardId'], ['boards.id'], ),
                     sa.ForeignKeyConstraint(['pinId'], ['pins.id'], ),
                     sa.PrimaryKeyConstraint('pinId', 'boardId'),
-                    schema='Pinteresting'
                     )
 
     if environment == "production":
