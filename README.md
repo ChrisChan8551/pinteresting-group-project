@@ -3,7 +3,7 @@
 Check out a live version of Pinteresting here:
 [Pinteresting Live][Render]
 
-[Render]: https://Pinteresting-project.onrender.com/
+[Render]: https://pinteresting.onrender.com
 
 Pinteresting is a clone of the website Pinterest where you use a visual discovery engine for finding ideas like recipes, home and style inspiration,
  and more.
@@ -63,7 +63,7 @@ React components exist for each corresponding action in the app. Information
 needed for all components or user actions performed.
 
 [Backend Routes]
-[Backend Routes]: https://github.com/Derek-Emsbach/Pinteresting-group-project/blob/main/z.Documentation/backend_routes.md
+[Backend Routes]: https://github.com/ChrisChan8551/pinteresting-group-project/blob/master/z.Documentation/backend_routes.md
 
 **Discover Page: Shows recent pins from users**
 
