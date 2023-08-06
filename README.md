@@ -34,7 +34,8 @@ and backend and allows for speedy re-rendering handled by React.
 
 *Auth Page*
 
-![image](https://user-images.githubusercontent.com/37425403/218917956-8280a8e9-c1bf-49ac-bd35-75d5d3d6c22a.png)
+![image](https://github.com/ChrisChan8551/pinteresting-group-project/assets/103156299/161cf1e1-3a2d-47e6-8724-f1dcf1f803ae)
+
 
 *Normal Authentication*
 
@@ -71,7 +72,8 @@ Pictures of recent pins are displayed once logged in. User can select pins that 
 user can click url link which directs user to the source of the pin.
 
 *Example Discover Page*
-![image](https://user-images.githubusercontent.com/37425403/218918110-c112e024-7fb7-4efb-8e14-2972920df93d.png)
+![image](https://github.com/ChrisChan8551/pinteresting-group-project/assets/103156299/7a4e5447-8d22-49c9-9b81-915708e23afe)
+
 
 The user can...
 1. Select and view pins that they are interested in.
@@ -98,5 +100,5 @@ From here, user can view
 2) Boards
 3) Pins
 
-**Following / Follwers**
+**Following / Followers**
 User can click and display list of users that they follow or people that follow them.
