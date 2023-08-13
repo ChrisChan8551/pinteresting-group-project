@@ -1,11 +1,7 @@
-import React from "react";
+import React from 'react';
 
-function EditBoardForm(){
-    return(
-        <div>
-        Edit Board
-        </div>
-    )
+function EditBoardForm() {
+	return <div>Edit Board</div>;
 }
 
-export default EditBoardForm
+export default EditBoardForm;

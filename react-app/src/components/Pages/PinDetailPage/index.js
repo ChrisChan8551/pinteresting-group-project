@@ -86,22 +86,22 @@ function PinDetailPage() {
 						</li>
 					)}
 				</div>
-        <div className='button-container'>
-				{currentUser.id === pinAuthor.id && (
-					<Link to={`/pins/${pin.id}/update`}>
-						<button className='regular-button' type='button'>
-							Update Pin
-						</button>
-						<button
-							className='create-button'
-							type='button'
-							onClick={deletePin}
-						>
-							Delete Pin
-						</button>
-					</Link>
-				)}
-        </div>
+				<div className='button-container'>
+					{currentUser.id === pinAuthor.id && (
+						<Link to={`/pins/${pin.id}/update`}>
+							<button className='regular-button' type='button'>
+								Update Pin
+							</button>
+							<button
+								className='create-button'
+								type='button'
+								onClick={deletePin}
+							>
+								Delete Pin
+							</button>
+						</Link>
+					)}
+				</div>
 			</div>
 		</ul>
 	);

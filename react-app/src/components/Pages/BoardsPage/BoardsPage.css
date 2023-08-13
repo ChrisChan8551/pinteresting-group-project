@@ -3,6 +3,10 @@
 	flex-direction: column;
 	gap: 40px;
 }
+.BoardDetail--Page {
+	padding-bottom: 20px;
+	/* border:blue solid; */
+}
 
 .MyBoards--Heading {
 	display: flex;

@@ -1,7 +1,6 @@
-.PinDetail--Page .PinDetail--Image--Container {
-	/* width: 230px; */
+/* .PinDetail--Page .PinDetail--Image--Container {
 	padding: 20px;
-}
+} */
 
 .board-container {
 	display: flex;
@@ -16,6 +15,7 @@
 	/* min-height: 120px; */
 	max-height: 800px;
 	border-radius: 5%;
+	padding: 20px;
 }
 
 .PinDetail--Page {

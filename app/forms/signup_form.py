@@ -5,10 +5,12 @@ from app.models import User
 from flask_wtf.file import FileField, FileAllowed
 from sqlalchemy import func
 
+
 def user_exists(form, field):
     # Checking if user exists
     email = field.data
-    user = User.query.filter(func.lower(User.email) == func.lower(email)).first()
+    user = User.query.filter(func.lower(User.email) ==
+                             func.lower(email)).first()
     if user:
         raise ValidationError('Email address is already in use.')
 
@@ -16,7 +18,8 @@ def user_exists(form, field):
 def username_exists(form, field):
     # Checking if username is already in use
     username = field.data
-    user = User.query.filter(func.lower(User.username) == func.lower(username)).first()
+    user = User.query.filter(func.lower(User.username)
+                             == func.lower(username)).first()
     if user:
         raise ValidationError('Username is already in use.')
 

@@ -1,4 +1,4 @@
-from flask import Blueprint, jsonify, session, request ,redirect
+from flask import Blueprint, jsonify, session, request, redirect
 from app.models import User, db
 from app.forms import LoginForm
 from app.forms import SignUpForm
@@ -17,7 +17,6 @@ def validation_errors_to_error_messages(validation_errors):
         for error in validation_errors[field]:
             errorMessages.append(f'{field} : {error}')
     return errorMessages
-
 
 
 @auth_routes.route('/')
@@ -67,8 +66,8 @@ def sign_up():
 
     if form.validate_on_submit():
         user = User(
-            firstName = form.data['firstName'],
-            lastName = form.data['lastName'],
+            firstName=form.data['firstName'],
+            lastName=form.data['lastName'],
             username=form.data['username'],
             email=form.data['email'],
             password=form.data['password'],

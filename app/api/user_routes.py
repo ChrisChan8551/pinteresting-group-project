@@ -6,8 +6,8 @@ from app.forms import ProfileForm
 from app.forms import EmptyForm
 
 
-
 user_routes = Blueprint('users', __name__)
+
 
 def validation_errors_to_error_messages(validation_errors):
     """
@@ -18,6 +18,7 @@ def validation_errors_to_error_messages(validation_errors):
         for error in validation_errors[field]:
             errorMessages.append(f'{field} : {error}')
     return errorMessages
+
 
 @user_routes.route('/')
 @login_required
@@ -42,17 +43,20 @@ def user(id):
 
     return user.to_dict_with_related()
 
+
 @user_routes.route('/<int:id>/pins')
 # @login_required
 def user_pins(id):
     pins = Pin.query.filter_by(userId=id)
     return jsonify([pin.to_dict() for pin in pins])
 
+
 @user_routes.route('/<int:id>/boards')
 # @login_required
 def user_boards(id):
     boards = Board.query.filter_by(userId=id)
     return jsonify([board.to_dict() for board in boards])
+
 
 @user_routes.route('/<int:id>', methods=['PUT'])
 @login_required
@@ -66,7 +70,7 @@ def edit_user(id):
         data = form.data
         # print(data, 'helloo from backend')
 
-        user= User.query.get(id)
+        user = User.query.get(id)
         for key, value in data.items():
             setattr(user, key, value)
         # print('*********************UPDATED User*******************************')
@@ -74,6 +78,7 @@ def edit_user(id):
 
         return user.to_dict_with_related()
     return {'errors': validation_errors_to_error_messages(form.errors)}, 400
+
 
 @user_routes.route('/follow/<int:id>', methods=['POST'])
 @login_required

@@ -2,6 +2,19 @@
 	max-width: 1512px;
 } */
 
+.list-details {
+	list-style: none;
+}
+.user-list-container {
+	padding-left: 120px;
+	/* padding-bottom: 20px; */
+}
+
+.follow-button-container {
+	padding-left: 120px;
+	padding-bottom: 20px;
+}
+
 .icon {
 	display: flex;
 	align-items: center;
@@ -27,7 +40,7 @@
 	width: 340px;
 	display: flex;
 	justify-content: space-evenly;
-	gap: 10px;
+	/* gap: 10px; */
 	padding-right: 20px;
 }
 

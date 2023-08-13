@@ -1,14 +1,15 @@
-from flask import Blueprint, jsonify,render_template,redirect,request
+from flask import Blueprint, jsonify, render_template, redirect, request
 from flask_sqlalchemy import SQLAlchemy
 from flask_wtf import FlaskForm
 from wtforms import StringField
 from wtforms.validators import DataRequired, Email, ValidationError
-from flask_login import login_required,current_user
-from app.models import Board,Pin,db
+from flask_login import login_required, current_user
+from app.models import Board, Pin, db
 from app.forms import BoardForm
 # from app import dbfuncs
 
 board_routes = Blueprint('boards', __name__)
+
 
 def validation_errors_to_error_messages(validation_errors):
     """
@@ -20,11 +21,13 @@ def validation_errors_to_error_messages(validation_errors):
             errorMessages.append(f'{field} : {error}')
     return errorMessages
 
-@board_routes.route('/',methods=['GET'])
+
+@board_routes.route('/', methods=['GET'])
 # @login_required
 def get_all_boards():
     boards = Board.query.all()
     return jsonify([board.to_dict() for board in boards])
+
 
 @board_routes.route('/<int:id>')
 @login_required
@@ -32,6 +35,7 @@ def get_board(id):
     # print("************GET 1 BOARD********************")
     board = Board.query.get(id)
     return board.to_dict()
+
 
 @board_routes.route('/', methods=['GET', 'POST'])
 @login_required
@@ -92,6 +96,7 @@ def add_pinning(board_id, pin_id):
 
     db.session.commit()
     return board.to_dict()
+
 
 @board_routes.route('/<int:board_id>/pin/<int:pin_id>', methods=['DELETE'])
 @login_required

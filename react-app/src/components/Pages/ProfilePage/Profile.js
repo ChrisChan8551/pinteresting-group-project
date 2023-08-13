@@ -66,7 +66,7 @@ function Profile() {
 	return (
 		<div className='profile_container'>
 			<div className='user_info'>
-				<img src={currentUser.image}></img>
+				<img src={currentUser.image} alt=''></img>
 				<div className='profile_info'>
 					<h1>
 						{currentUser.firstName} {currentUser.lastName}
@@ -148,18 +148,18 @@ function Profile() {
 						<h2> Inspire with an Idea Pin</h2>
 						<button
 							onClick={() => history.push('/pinform')}
-							className='create_pin_btn'
+							className='create-button'
 						>
-							Create
+							Create Pin
 						</button>
 					</div>
 					<div className='create_board_container'>
 						<h2> Create A Board </h2>
 						<button
 							onClick={() => history.push('/boardform')}
-							className='create_pin_btn'
+							className='create-button'
 						>
-							Create
+							Create Board
 						</button>
 					</div>
 				</>
